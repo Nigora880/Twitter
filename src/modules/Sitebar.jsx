@@ -2,9 +2,7 @@ import React from 'react'
 
 const Sitebar = () => {
   return (
-    <div>
-      
-    </div>
+   <div className="w-[402px] ">sitebar</div>
   )
 }
 

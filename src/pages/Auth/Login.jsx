@@ -32,8 +32,8 @@ const Login = () => {
           {loading ? <img className='mx-auto scale-[2]' src={PageLoading} alt='loading...' width={25} height={25}/> : "Log in"}
         </Button>
         <div className="flex justify-between">
-           <Text title={"Forgot password?"}/>
-           <Text title={"Sign up to Twitter"}/>
+           <Text extraclass={"text-[#1DA1F2]"} title={"Forgot password?"}/>
+           <Text extraclass={"text-[#1DA1F2]"} title={"Sign up to Twitter"}/>
         </div>
       </form>
     </div>

@@ -1,4 +1,4 @@
 import Logo from "./logo.png"
 import PageLoading from "./PageLoading.png"
-
-export {Logo, PageLoading}
+import Hero from "./boburImg.png"
+export {Logo, PageLoading,Hero}

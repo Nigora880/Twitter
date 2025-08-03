@@ -1,10 +1,15 @@
-import React from 'react'
-
+import { Heading } from "../../components"
+import { ModeIcon } from "../../assets/icons"
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+<div className="">
+<div className="">
+<Heading type={"h1"} title={"Home"}/>
+<ModeIcon/>
+</div>
+
+</div>
+
   )
 }
 
