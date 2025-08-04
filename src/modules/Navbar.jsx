@@ -1,4 +1,4 @@
-import { Heading, routeList, Text } from '../components'
+import { Button, Heading, routeList, Text } from '../components'
 import { Hero, Logo } from '../assets/img'
 import NavItem from '../components/NavItem'
 import { useState } from 'react'
