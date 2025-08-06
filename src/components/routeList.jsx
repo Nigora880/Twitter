@@ -1,6 +1,8 @@
 import { Bookmarks, Explore, Home, Lists, Messages, More, Notifications, Profile } from "../pages/Dashboard";
 import { PATH } from "./path";
 import { BookmarksIcon, ExploreIcon, HomeIcon, ListIcon, MessagesIcon, MoreIcon, NotificationIcon, ProfileIcon } from "../assets/icons"
+import { Suspense } from "react";
+import PageLoading from "./PageLoading";
 export const routeList = [
     {
         id: 1,
@@ -8,7 +10,7 @@ export const routeList = [
         title: "Home",
         icon: <HomeIcon/>,
         activeIcon:<HomeIcon active={true}/>,
-        element: <Home />,
+        element: <Suspense fallback={<PageLoading isLoading={true}/>}><Home /></Suspense>,
         children: []
     },
     {
@@ -17,7 +19,7 @@ export const routeList = [
         title: "Explore",
         icon: <ExploreIcon/>,
         activeIcon:<ExploreIcon active={true}/>,
-        element: <Explore />,
+        element: <Suspense fallback={<PageLoading isLoading={true}/>}><Explore /></Suspense> ,
         children: []
     },
     {

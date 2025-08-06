@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className='w-[283px] h-[100vh] pt-[31px] pr-[15px]'>  
     <img className='mb-[49px]' src={Logo} alt="logo" width={40} height={33}/>
     <nav className='flex flex-col gap-[32px]'>
-      {routeList.map(item => <NavItem setActiveNav={setActiveNav} activeNav={activeNav} item={item}/>)}
+      {routeList.map(item => <NavItem setActiveNav={setActiveNav} key={item.id} activeNav={activeNav} item={item}/>)}
       <button className=' w-[230px] h-[55px] text-white bg-[#1D9BF0] text-[18px] rounded-full'>Tweet</button>
     </nav>
     <div className="flex pt-[260px]">
